@@ -3,7 +3,6 @@
     --secondary-color: #333;
 }
 
-
 html, body {
     height: 100%;
     margin: 0;
@@ -13,6 +12,7 @@ html, body {
 
 body {
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 header.blue-header {
@@ -45,8 +45,13 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 15px;
     display: block;
-    text-decoration: none;
+    font-size: 1.2rem;
     font-weight: 700;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
 .container{
@@ -76,8 +81,6 @@ nav ul li a {
     float: right;
     width: 150px;
     height: auto;
-    border: 10px;
-    margin-top: 30px;
     margin-left: 10px;
 }
 
@@ -97,7 +100,13 @@ nav ul li a {
 }
 
 .flag {
-    float: left;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-me p {
@@ -119,6 +128,7 @@ nav ul li a {
     color: white;
     text-align: center;
 }
+
 .web-dev-resources {
     width: 30%;
     background-color: white;
@@ -155,4 +165,10 @@ footer p {
     margin-inline: auto;
     text-align: center;
     color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }

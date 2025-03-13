@@ -36,6 +36,7 @@
     nav ul {
         display: none;
         flex-direction: column;
+        gap: 0;
     }
 
     nav ul.show {

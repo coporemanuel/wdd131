@@ -7,10 +7,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Big Shoulders', sans-serif;
 }
 
-body {
-    font-family: 'Big Shoulders', sans-serif;
+body, html {
     margin: 0;
     padding: 0;
 }
@@ -32,7 +32,7 @@ main {
 }
 
 header h1 {
-	font-size: 2rem;
+	font-size: 2.5rem;
     color: white;
 }
 
@@ -40,6 +40,7 @@ nav ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
+    gap: 3rem;
 }
 
 nav a {
@@ -101,13 +102,14 @@ main h1{
     justify-content: end;
 }
 
-#menu {
-    float: right;
-}
 /* footer */
 footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+footer p{
+    font-size: 1.2rem;
 }

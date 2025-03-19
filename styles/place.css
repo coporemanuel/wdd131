@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #38549d;
+    --secondary-color: #f0e6bc;
+    --third-color: #c4ac54;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body, html {
+    font-family: "Playfair Display", serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    height: 15vh;
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    display: grid;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+/* CONTAINERS  */
+.main-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.data, .weather {
+    background: var(--secondary-color);
+    padding: 15px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.data h2, .weather h2 {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.data p, .weather p {
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* IMAGEN  */
+picture {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* FOOTER  */
+footer {
+    background-color: var(--primary-color);
+    height: 10vh;
+}
+
+footer p {
+    color: white;
+    display: grid;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 750px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .main-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .data, .weather {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .data h2, .weather h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .data p, .weather p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .weather h2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather h2 img {
+        margin-top: 5px;
+    }
+
+    picture {
+        position: static; 
+        width: 100%;
+        height: auto;
+    }
+    
+    footer p {
+        font-size: 1rem
+    }
+}

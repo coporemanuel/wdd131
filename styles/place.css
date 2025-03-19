@@ -57,6 +57,12 @@ header h1 {
     margin-bottom: 5px;
 }
 
+.data p::before, .weather p::before {
+    content: "▪️";
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
 /* IMAGEN  */
 picture {
     position: fixed;

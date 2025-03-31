@@ -81,16 +81,53 @@ main h2{
     gap: 1rem;
 }
 
-.gallery figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* General container styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #9a9a9c; 
 }
-.gallery img {
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-10px); 
+}
+
+
+section img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    border-bottom: 1px solid #ddd;
 }
+
+
+section h3 {
+    font-size: 1.5rem;
+    margin: 16px;
+    color:black;
+}
+
+section p {
+    margin: 8px 16px;
+    font-size: 1rem;
+    color: black;
+}
+
+section .label {
+    font-weight: bold;
+    color: black;
+}
+
 
 .hamburger {
     display: none;

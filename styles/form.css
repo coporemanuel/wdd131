@@ -1,0 +1,223 @@
+:root {
+    --primarycolor: #333333;
+    --secondarycolor: #88a7a7;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+main {
+    gap: 20px;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--secondarycolor);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* PRODUCT NAME  */
+#productname {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+#productname:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 0 0 2px var(--primarycolor);
+}
+
+option {
+    font-size: 1rem;
+    color: var(--primarycolor);
+    font-style: italic;
+}
+/* overall rating */
+.rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.rating input[type="radio"] {
+    display: flex;
+}
+
+.rating label {
+    font-size: 1rem;
+    cursor: pointer;
+    color: none;
+}
+
+.rating input[type="radio"]:checked + label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+/* DATA OF INSTALATION */
+#dataofinstallation {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+#dataofinstallation:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 0 0 2px var(--primarycolor);
+}
+
+/* checkbox group */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    position: relative;
+}
+
+/* WRITEN REVIEW  */
+#writtenreview {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+#writtenreview:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 0 0 2px var(--primarycolor);
+}
+
+/* USER  */
+
+input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+input[type="text"]:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0 0 0 2px var(--primarycolor);
+}
+
+/* SUBMIT BUTTON  */
+input[type="submit"] {
+    background-color: var(--primarycolor);
+    font-size: 1rem;
+    font-style: italic;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    box-shadow: 0 0 0 5px white;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* FOOTER  */
+footer {
+    background-color: var(--primarycolor);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+
+/* SMALL VIEW  */
+@media (max-width: 550px) {
+    form {
+        max-width: 100%;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    #productname,
+    #dataofinstallation,
+    #writtenreview,
+    input[type="text"] {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .rating {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .checkbox-group {
+        gap: 5px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+}

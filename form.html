@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="productname">Product Name:</label>
+            <select name="productname" id="productname" required>
+                <option value="" disabled selected>Select a Product...</option>
+                <!-- FROM THE ARRAY  -->
+            </select>
+
+            <label for="rating">Overall Rating</label>
+            <div class="rating">
+                <input type="radio" id="onestar" name="stars" value="1" required>
+                <label for="onestar">★</label>
+                <input type="radio" id="twostar" name="stars" value="2" required>
+                <label for="twostar">★★</label>
+                <input type="radio" id="threestar" name="stars" value="3" required>
+                <label for="threestar">★★★</label>
+                <input type="radio" id="fourstar" name="stars" value="4" required>
+                <label for="fourstar">★★★★</label>
+                <input type="radio" id="fivestar" name="stars" value="5" required>
+                <label for="fivestar">★★★★★</label>
+            </div>
+
+            <label for="dataofinstallation">Data of Installation</label>
+            <input type="date" id="dataofinstallation" name="dataofinstallation" required>
+
+            <label for="checkbox">Which features did you find useful in the product?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="checkbox1" name="checkbox1" value="durability">
+                <label for="checkbox1">Durability</label>
+                <input type="checkbox" id="checkbox2" name="checkbox2" value="easeofuse">
+                <label for="checkbox2">Ease of Use</label>
+                <input type="checkbox" id="checkbox3" name="checkbox3" value="performance">
+                <label for="checkbox3">Performance</label>
+                <input type="checkbox" id="checkbox4" name="checkbox4" value="design">
+                <label for="checkbox4">Design</label>
+            </div>
+
+            <label for="writtenreview"> Written Review</label>
+            <textarea name="writtenreview" id="writtenreview"></textarea>
+
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="submit"></label>
+            <input type="submit" id="submit" name="submit" value="Submit">
+            
+        </form>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>

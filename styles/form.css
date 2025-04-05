@@ -200,9 +200,10 @@ footer {
     }
 
     .rating {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        align-items: center;
     }
 
     .checkbox-group {

@@ -13,8 +13,12 @@ header {
     text-align: center;
     padding: 20px;
 }
-
-h1, h2, h3 {
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #EAF8BF;
+    margin: 0;
+}
+h2, h3 {
     font-family: 'Playfair Display', serif;
     color: #006992;
 }

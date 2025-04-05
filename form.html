@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <meta name="description" content="Submit your product review, including ratings, features, and written feedback.">
+    <meta name="author" content="Jose Manuel Copore Cutipa">
+    <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,28 +37,35 @@
                 <label for="fivestar">★★★★★</label>
             </div>
 
-            <label for="dataofinstallation">Data of Installation</label>
+            <label for="dataofinstallation">Date of Installation:</label>
             <input type="date" id="dataofinstallation" name="dataofinstallation" required>
 
             <label for="checkbox">Which features did you find useful in the product?</label>
             <div class="checkbox-group">
-                <input type="checkbox" id="checkbox1" name="checkbox1" value="durability">
-                <label for="checkbox1">Durability</label>
-                <input type="checkbox" id="checkbox2" name="checkbox2" value="easeofuse">
-                <label for="checkbox2">Ease of Use</label>
-                <input type="checkbox" id="checkbox3" name="checkbox3" value="performance">
-                <label for="checkbox3">Performance</label>
-                <input type="checkbox" id="checkbox4" name="checkbox4" value="design">
-                <label for="checkbox4">Design</label>
+                <div>
+                    <input type="checkbox" id="checkbox1" name="checkbox1" value="durability">
+                    <label for="checkbox1">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="easeofuse">
+                    <label for="checkbox2">Ease of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox3" name="checkbox3" value="performance">
+                    <label for="checkbox3">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox4" name="checkbox4" value="design">
+                    <label for="checkbox4">Design</label>
+                </div>
             </div>
 
-            <label for="writtenreview"> Written Review</label>
+            <label for="writtenreview">Written Review:</label>
             <textarea name="writtenreview" id="writtenreview"></textarea>
 
             <label for="username">User Name:</label>
             <input type="text" id="username" name="username">
 
-            <label for="submit"></label>
             <input type="submit" id="submit" name="submit" value="Submit">
             
         </form>

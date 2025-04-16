@@ -1,0 +1,468 @@
+/* HOME PAGE  */
+:root {
+    --firstcolor: #006992;
+    --secondcolor: #001D4A;
+    --thirdcolor: #eaf8bf;
+    --fourthcolor: #eca400;
+}
+
+header {
+    background-color: var(--firstcolor);
+    color: var(--thirdcolor);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    color: var(--thirdcolor);
+    text-shadow: 2px 2px 4px var(--secondcolor);
+    display: flex;
+    margin-left: 8rem;
+}
+
+header img {
+    width: 7rem;
+    height: auto;
+    border-radius: 50%;
+    display: flex;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--thirdcolor);
+}
+
+h1, h2, h3{
+    font-family: "Playfair", serif;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+}
+
+#myButton {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--thirdcolor);
+    cursor: pointer;
+}
+
+nav menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--firstcolor);
+    padding: 10px;
+    
+}
+
+nav menu li {
+    list-style: none;
+    margin: 0 15px;
+    font-size: 1.5rem;
+}
+
+nav menu li a {
+    text-decoration: none;
+    color: var(--thirdcolor);
+}
+
+.active {
+    color: var(--fourthcolor);
+    font-weight: bold;
+    text-decoration: underline;
+    border-radius: 10px;
+    background-color: rgba(102, 81, 9, 0.2);
+    padding: 10px 20px;
+}
+
+.hero-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-container h2 {
+    font-size: 3rem;
+    color: var(--thirdcolor);
+    text-shadow: 2px 2px 4px var(--secondcolor);
+    margin-bottom: 20px;
+    position: absolute; 
+    z-index: 1;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+}
+
+.hero-container img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.local, .online_education{
+    background-color: var(--firstcolor);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 60vh; 
+    width: 100%;
+    padding: 20px; 
+    text-align: center; 
+    color: var(--thirdcolor); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.local img, .online_education img{
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+
+.local p, .online_education p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 55%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.local button, .online_education button {
+    background-color: var(--fourthcolor);
+    color: var(--secondcolor);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.local button:hover,
+.online_education button:hover {
+    background-color: var(--secondcolor);
+    color: var(--fourthcolor);
+    transform: scale(1.05);
+}
+
+footer {
+    height: auto;
+    background-color: var(--secondcolor);
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px; 
+    display: flex;
+}
+
+footer div {
+    margin-bottom: 3.7rem;
+}
+
+footer div img {
+    width: 40px;
+    height: auto;
+    margin: 0 5px;
+}
+
+footer div img:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s;
+}
+
+footer > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.details p,
+.details a {
+    margin-right: 15px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+footer div a,
+footer div p {
+    color: var(--thirdcolor);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* EDUCATION PAGE  */
+.education {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 900px;
+}
+
+.education {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.education div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+}
+
+.cards-education img {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.cards-education h2 {
+    font-size: 2.5rem;
+    margin: 8px 0;
+    color: var(--firstcolor);
+}
+
+.cards-education h3 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+    color: var(--firstcolor);
+}
+
+.cards-education p {
+    color: var(--secondcolor);
+    font-size: 1em;
+    line-height: 2;
+}
+
+.learn-more {
+    background-color: var(--firstcolor);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 12px;
+    width: 150px;
+}
+
+.learn-more:hover {
+    background-color: var(--fourthcolor);
+    color: var(--secondcolor);
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* JOBS PAGE  */
+.jobs {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 900px;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.jobs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+}
+
+.cards-jobs img {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.cards-jobs h2 {
+    font-size: 2.5rem;
+    margin: 8px 0;
+    color: var(--firstcolor);
+}
+
+.cards-jobs h3 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+    color: var(--firstcolor);
+}
+
+.cards-jobs p {
+    color: var(--secondcolor);
+    font-size: 1em;
+    line-height: 2;
+}
+
+@media (max-width: 750px) {
+    #myButton {
+        display: grid;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: var(--thirdcolor);
+        cursor: pointer;
+        width: 100%;
+        text-align: right;
+        padding: 0.25rem 2vw;
+    }
+
+    nav menu {
+        display: none;
+        z-index: 1000;
+    }
+
+    nav menu.show {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav menu {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav menu li {
+        margin: 0;
+    }
+
+    nav menu li a {
+        display: block;
+        text-align: left;
+        padding: 10px 20px;
+        color: var(--thirdcolor);
+        font-size: 1.4rem;
+    }
+
+    nav menu li a:hover {
+        background-color: var(--thirdcolor);
+        color: var(--secondcolor);
+        font-weight: bold;
+    }
+
+    .active {
+        text-decoration: underline;
+        font-weight: bold;
+        color: var(--fourthcolor);
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+        margin: 0;
+    }
+
+    header img {
+        width: 4rem;
+    }
+
+    .hero-container {
+        height: 75vh;
+    }
+
+    .local, .online_education {
+        height: auto;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .local img, .online_education img {
+        width: 30%;
+        margin-bottom: 5px;
+    }
+
+    .local p, .online_education p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        max-width: 90%;
+    }
+
+    .local button, .online_education button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .education, .jobs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .cards-education, .cards-jobs {
+        width: 80%;
+        margin: 10px auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    footer div {
+        margin-bottom: 15px;
+    }
+
+    footer div img {
+        width: 30px;
+    }
+}
